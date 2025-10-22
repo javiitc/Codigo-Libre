@@ -21,7 +21,19 @@ public class Main {
 
         if (seleccion == 1) {
             System.out.println("Has seleccionado el tema 'Videjouegos'. Serán 5 preguntas en el orden que tu elijas. Sabrás la pregunta cuando la selecciones.");
-            System.out.println("Ahora, selecciona la pregunta por la cual quieres empezar");
+            System.out.println("Ahora, selecciona la pregunta por la cual quieres empezar:");
+            int pregunta = sc.nextInt();
+            if (pregunta == 1){
+                System.out.println("Pregunta 1: Cual fue el GOTY de 2022?");
+                String respuestasA = "God of war Ragnarok";
+                String respuestasB = "Elden Ring";
+                String respuestasC = "It takes two";
+                System.out.printf("a.%s \n", respuestasA);
+                System.out.printf("b.%s \n", respuestasB);
+                System.out.printf("c.%s \n", respuestasC);
+                String respuesta = sc.nextLine();
+
+            }
         }
 
 
