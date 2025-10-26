@@ -20,25 +20,36 @@ public class Main {
         }
 
         if (seleccion == 1) {
-            System.out.println("Has seleccionado el tema 'Videjouegos'. Serán 5 preguntas, en el ordem que elijas. Sabrás la pregunta cuando la selecciones.");
+            System.out.println("Has seleccionado el tema 'Videjouegos'. Serán 3 preguntas, en el orden que elijas. Sabrás la pregunta cuando la selecciones.");
             System.out.println("Ahora, selecciona la pregunta por la cual quieres empezar:");
+            String [] preguntas = {"Que videojuego ganó el GOTY en el 2022?",
+                                   "En qué año salió a la venta la nintendo DS?",
+                                   "Que plataforma de videojuegos es la más usada en PC?"};
             int pregunta = sc.nextInt();
             if (pregunta == 1){
-                System.out.println("Pregunta 1: Cual fue el GOTY de 2022?");
-                String opcionA = "God of war Ragnarok";
-                String opcionB = "Elden Ring";
-                String opcionC = "It takes two";
-                System.out.printf("a.%s \n", opcionA);
-                System.out.printf("b.%s \n", opcionB);
-                System.out.printf("c.%s \n", opcionC);
+                System.out.println(preguntas[0]);
                 String respuesta = sc.nextLine();
                 if (respuesta.equals("b")){
-                    System.out.println("Correcto, siguiente pregunta");
+                    System.out.println("Correcto, seleccione siguiente pregunta");
                     else {
-                        System.out.println("Incorrecto, pasemos a la siguiente pregunta");
+                        System.out.println("Incorrecto, seleccione la siguiente pregunta");
                     }
                 }
-
+                int pregunta2 = sc.nextInt();
+                while (pregunta2 == 1) {
+                    System.out.println("Pregunta ya seleccionada, por favor seleccione otra");
+                    if ((pregunta2 == 2) || pregunta2 == 3); {
+                        break;
+                    }
+                }
+                while ((pregunta2 < 1) || (pregunta2 > 3)) {
+                    System.out.println("Selección no válida, intentelo de nuevo");
+                    if ((pregunta2 == 2) || (pregunta2 == 3));
+                }
+                if (pregunta2 == 2) {
+                    System.out.println(preguntas [1]);
+                    String respuesta3 = sc.nextLine();
+                }
             }
         }
 
