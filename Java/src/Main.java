@@ -9,10 +9,10 @@ public class Main {
         System.out.println("2: Peliculas");
         int seleccion = sc.nextInt();
 
-        while ((seleccion > 2) || (seleccion < 1)) {
+        while (true) {
             System.out.println("Selección no válida, intentelo de nuevo.");
-            int seleccion2 = sc.nextInt();
-            if ((seleccion2 == 1) || (seleccion2 == 2)) {
+            seleccion = sc.nextInt();
+            if ((seleccion == 1) || (seleccion == 2)) {
                 break;
             }
         }
@@ -29,7 +29,6 @@ public class Main {
                 System.out.println("a. God of War Ragnarok");
                 System.out.println("b. Elden ring");
                 System.out.println("c. It Takes two");
-
                 String respuesta = sc.nextLine();
 
                 if (respuesta.equals("b")) {
