@@ -8,7 +8,9 @@ public class Main {
         System.out.println("1: Videojuegos");
         System.out.println("2: Peliculas");
         int seleccion = sc.nextInt();
-        int respuesta;
+        int respuesta = 0;
+        int respuesta2 = 0;
+        int respuesta3 = 0;
         int pregunta2;
 
         while (seleccion < 1 || seleccion > 2) {
@@ -54,22 +56,26 @@ public class Main {
                 }
                 if (pregunta2 == 2) {
                     System.out.println(preguntas [1]);
-                    System.out.println("a. 2004");
-                    System.out.println("b. 2005");
-                    System.out.println("c. 2008");
-                    String respuesta2 = sc.nextLine();
-                    if (respuesta2.equals("a")) {
+                    System.out.println("1. 2004");
+                    System.out.println("2. 2005");
+                    System.out.println("3. 2008");
+
+                    respuesta2 = sc.nextInt();
+
+                    if (respuesta2 == 1) {
                         System.out.println("Correcto, aunque en Europa se estrenó en 2005, su lanzamiento original fue en 2004 en Japón y EEUU");
                         System.out.println("Pasemos a la ultima pregunta");
                     } else {
-                        System.out.println("Incorrecto, contiuemos con la ultima pregunt");
+                        System.out.println("Incorrecto, contiuemos con la ultima pregunta");
                     }
                     System.out.println(preguntas[2]);
-                    System.out.println("a. Steam");
-                    System.out.println("b. Epic Games Launcher");
-                    System.out.println("c. Ubisoft Connect");
-                    String respuesta3 = sc.nextLine();
-                    if (respuesta3.equals("a")) {
+                    System.out.println("1. Steam");
+                    System.out.println("2. Epic Games Launcher");
+                    System.out.println("3. Ubisoft Connect");
+
+                    respuesta3 = sc.nextInt();
+
+                    if (respuesta3 == 1) {
                         System.out.println("Correcto! Has finalizado el cuestionario, ahora pasaremos al recuento de tus preguntas correctas");
                     } else {
                         System.out.println("Incorrecto. Ahora pasemos al recuento de preguntas correctas");
@@ -80,8 +86,10 @@ public class Main {
                     System.out.println("a. Steam");
                     System.out.println("b. Epic Games Launcher");
                     System.out.println("c. Ubisoft Connect");
-                    String respuesta3 = sc.nextLine();
-                    if (respuesta3.equals("a")) {
+
+                    respuesta3 = sc.nextInt();
+
+                    if (respuesta3 == 1) {
                         System.out.println("Correcto! Pasemos con la ultima pregunta");
                     } else {
                         System.out.println("Incorrecto. Pasemos con la ultima pregunta");
@@ -90,14 +98,26 @@ public class Main {
                     System.out.println("a. 2004");
                     System.out.println("b. 2005");
                     System.out.println("c. 2008");
-                    String respuesta2 = sc.nextLine();
-                    if (respuesta2.equals("a")) {
+
+                    respuesta2 = sc.nextInt();
+
+                    if (respuesta2 == 1) {
                         System.out.println("Correcto, aunque en Europa se estrenó en 2005, su lanzamiento original fue en 2004 en Japón y EEUU." +
                                            "Ahora continuemos con el recuento de preguntas acertadas.");
                     } else {
                         System.out.println("Incorrecto. Continuemos con el recuento de preguntas");
                     }
+
+                } if (respuesta == 2 && respuesta2 == 1 && respuesta3 == 1) {
+                    System.out.println("3/3. Enhorabuena, tienes concocimientos básicos sobre los videojuegos!");
+                } else if (((respuesta == 2) && (respuesta2 == 1) || ((respuesta == 2) && (respuesta3 == 1)) || ((respuesta2 == 1) && (respuesta3 == 1)))) {
+                    System.out.println("2/3. Enhorabuena, has acertado 2 de 3, sigue así!");
+                } else if ((respuesta == 2) || (respuesta2 == 1) || (respuesta3 == 1)) {
+                    System.out.println("1/3. Puedes seguir mejorando");
+                } else {
+                    System.out.println("0/3. Puedes intentarlo de nuevo");
                 }
+
             }
         }
 
