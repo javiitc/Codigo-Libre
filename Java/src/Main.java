@@ -8,8 +8,10 @@ public class Main {
         System.out.println("1: Videojuegos");
         System.out.println("2: Peliculas");
         int seleccion = sc.nextInt();
+        int respuesta;
+        int pregunta2;
 
-        while (true) {
+        while (seleccion < 1 || seleccion > 2) {
             System.out.println("Selección no válida, intentelo de nuevo.");
             seleccion = sc.nextInt();
             if ((seleccion == 1) || (seleccion == 2)) {
@@ -26,25 +28,28 @@ public class Main {
             int pregunta = sc.nextInt();
             if (pregunta == 1) {
                 System.out.println(preguntas[0]);
-                System.out.println("a. God of War Ragnarok");
-                System.out.println("b. Elden ring");
-                System.out.println("c. It Takes two");
-                String respuesta = sc.nextLine();
+                System.out.println("1. God of War Ragnarok");
+                System.out.println("2. Elden ring");
+                System.out.println("3. It Takes two");
 
-                if (respuesta.equals("b")) {
+                respuesta = sc.nextInt();
+
+                if (respuesta == 2) {
                     System.out.println("Correcto, seleccione siguiente pregunta");
                 } else {
                     System.out.println("Incorrecto, seleccione la siguiente pregunta");
                 }
-                int pregunta2 = sc.nextInt();
+                pregunta2 = sc.nextInt();
                 while (pregunta2 == 1) {
                     System.out.println("Pregunta ya seleccionada, por favor seleccione otra");
+                    pregunta2 = sc.nextInt();
                     if ((pregunta2 == 2) || pregunta2 == 3); {
                         break;
                     }
                 }
                 while ((pregunta2 < 1) || (pregunta2 > 3)) {
                     System.out.println("Selección no válida, intentelo de nuevo");
+                    pregunta2 = sc.nextInt();
                     if ((pregunta2 == 2) || (pregunta2 == 3));
                 }
                 if (pregunta2 == 2) {
@@ -91,15 +96,6 @@ public class Main {
                                            "Ahora continuemos con el recuento de preguntas acertadas.");
                     } else {
                         System.out.println("Incorrecto. Continuemos con el recuento de preguntas");
-                    }
-                    if ((respuesta.equals("b")) && (respuesta2.equals("a")) && (respuesta3.equals("a"))) {
-                        System.out.println("3/3. Enhorabuena, tienes concocimientos básicos sobre los videojuegos!");
-                    } else if (((respuesta.equals("b")) && (respuesta2.equals("a"))) || ((respuesta.equals("b")) && (respuesta3.equals("a"))) || ((respuesta2.equals("a")) && (respuesta3.equals("a")))) {
-                        System.out.println("2/3. Enhorabuena, has acertado 2 de 3, sigue así!");
-                    } else if ((respuesta.equals("b")) || (respuesta2.equals("a")) || (respuesta3.equals("a"))) {
-                        System.out.println("1/3. Puedes seguir mejorando");
-                    } else {
-                        System.out.println("0/3. Puedes intentarlo de nuevo");
                     }
                 }
             }
