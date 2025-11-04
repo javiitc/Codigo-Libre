@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Te damos la bienvenida a esta ronda de preguntas rápidas. ");
         System.out.println("Constará de 3 preguntas relacionadas al tema que elijas. Ahora, selecciona el tema de las preguntas:");
         System.out.println("1: Videojuegos");
