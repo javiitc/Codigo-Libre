@@ -357,13 +357,14 @@ public class Main {
                 }
                 if (pregunta2 == 2) {
                     System.out.println(preguntas [1]);
+
                     System.out.println("1. Saga del Infinito");
                     System.out.println("2. Saga del Multiverso");
                     System.out.println("3. UCM (Universo Cinematografico de Marvel)");
 
                     respuesta2 = sc.nextInt();
 
-                    if (respuesta2 == 2) {
+                    if (respuesta2 == 1) {
                         System.out.println("Correcto. Pasemos a la ultima pregunta");
                     } else {
                         System.out.println("Incorrecto, contiuemos con la ultima pregunta");
@@ -383,36 +384,37 @@ public class Main {
                 }
                 if (pregunta2 == 3) {
                     System.out.println(preguntas[2]);
-                    System.out.println("1. Steam");
-                    System.out.println("2. Epic Games Launcher");
-                    System.out.println("3. Ubisoft Connect");
+
+                    System.out.println("1. Need For Speed");
+                    System.out.println("2. Fast & Furious");
+                    System.out.println("3. Gran Turismo");
 
                     respuesta3 = sc.nextInt();
 
-                    if (respuesta3 == 1) {
+                    if (respuesta3 == 2) {
                         System.out.println("Correcto! Pasemos con la ultima pregunta");
                     } else {
                         System.out.println("Incorrecto. Pasemos con la ultima pregunta");
                     }
                     System.out.println(preguntas [1]);
-                    System.out.println("1. 2004");
-                    System.out.println("2. 2005");
-                    System.out.println("3. 2008");
+
+                    System.out.println("1. Saga del Infinito");
+                    System.out.println("2. Saga del Multiverso");
+                    System.out.println("3. UCM (Universo Cinematografico de Marvel)");
 
                     respuesta2 = sc.nextInt();
 
                     if (respuesta2 == 1) {
-                        System.out.println("Correcto, aunque en Europa se estrenó en 2005, su lanzamiento original fue en 2004 en Japón y EEUU." +
-                                "Ahora continuemos con el recuento de preguntas acertadas.");
+                        System.out.println("Correcto. Ahora continuemos con el recuento de preguntas acertadas.");
                     } else {
                         System.out.println("Incorrecto. Continuemos con el recuento de preguntas");
                     }
 
-                } if (respuesta == 2 && respuesta2 == 1 && respuesta3 == 1) {
-                    System.out.println("3/3. Enhorabuena, tienes concocimientos básicos sobre los videojuegos!");
-                } else if (((respuesta == 2) && (respuesta2 == 1) || ((respuesta == 2) && (respuesta3 == 1)) || ((respuesta2 == 1) && (respuesta3 == 1)))) {
+                } if (respuesta == 3 && respuesta2 == 1 && respuesta3 == 2) {
+                    System.out.println("3/3. Enhorabuena, tienes cultura general (muy general) de peliculas!");
+                } else if (((respuesta == 3) && (respuesta2 == 1) || ((respuesta == 3) && (respuesta3 == 2)) || ((respuesta2 == 2) && (respuesta3 == 2)))) {
                     System.out.println("2/3. Enhorabuena, has acertado 2 de 3, sigue así!");
-                } else if ((respuesta == 2) || (respuesta2 == 1) || (respuesta3 == 1)) {
+                } else if ((respuesta == 3) || (respuesta2 == 1) || (respuesta3 == 2)) {
                     System.out.println("1/3. Puedes seguir mejorando");
                 } else {
                     System.out.println("0/3. Puedes intentarlo de nuevo");
@@ -423,9 +425,9 @@ public class Main {
             if (pregunta == 2) {
                 System.out.println(preguntas[1]);
 
-                System.out.println("1. 2004");
-                System.out.println("2. 2005");
-                System.out.println("3. 2008");
+                System.out.println("1. Saga del Infinito");
+                System.out.println("2. Saga del Multiverso");
+                System.out.println("3. UCM (Universo Cinematografico de Marvel)");
 
                 respuesta2 = sc.nextInt();
 
@@ -452,13 +454,13 @@ public class Main {
                 if (pregunta2 == 3) {
                     System.out.println(preguntas [2]);
 
-                    System.out.println("1. Steam");
-                    System.out.println("2. Epic Games Launcher");
-                    System.out.println("3. Ubisoft Connect");
+                    System.out.println("1. Need For Speed");
+                    System.out.println("2. Fast & Furious");
+                    System.out.println("3. Gran Turismo");
 
                     respuesta3 = sc.nextInt();
 
-                    if (respuesta3 == 1) {
+                    if (respuesta3 == 2) {
                         System.out.println("Correcto");
                         System.out.println("Pasemos a la ultima pregunta");
                     } else {
@@ -466,13 +468,13 @@ public class Main {
                     }
                     System.out.println(preguntas[0]);
 
-                    System.out.println("1. God of War Ragnarok");
-                    System.out.println("2. Elden ring");
-                    System.out.println("3. It Takes two");
+                    System.out.println("1. X-Men Dark Phoenix");
+                    System.out.println("2. Spiderman Far From Home");
+                    System.out.println("3. Avengers Endgame");
 
                     respuesta = sc.nextInt();
 
-                    if (respuesta == 1) {
+                    if (respuesta == 3) {
                         System.out.println("Correcto! Has finalizado el cuestionario, ahora pasaremos al recuento de tus preguntas correctas");
                     } else {
                         System.out.println("Incorrecto. Ahora pasemos al recuento de preguntas correctas");
@@ -481,35 +483,35 @@ public class Main {
                 if (pregunta2 == 1) {
                     System.out.println(preguntas[0]);
 
-                    System.out.println("1. God of War Ragnarok");
-                    System.out.println("2. Elden ring");
-                    System.out.println("3. It Takes two");
+                    System.out.println("1. X-Men Dark Phoenix");
+                    System.out.println("2. Spiderman Far From Home");
+                    System.out.println("3. Avengers Endgame");
 
                     respuesta = sc.nextInt();
 
-                    if (respuesta == 2) {
+                    if (respuesta == 3) {
                         System.out.println("Correcto! Pasemos con la ultima pregunta");
                     } else {
                         System.out.println("Incorrecto. Pasemos con la ultima pregunta");
                     }
                     System.out.println(preguntas [2]);
 
-                    System.out.println("1. Steam");
-                    System.out.println("2. Epic Games Launcher");
-                    System.out.println("3. Ubisoft Connect");
+                    System.out.println("1. Need For Speed");
+                    System.out.println("2. Fast & Furious");
+                    System.out.println("3. Gran Turismo");
 
                     respuesta3 = sc.nextInt();
 
-                    if (respuesta3 == 1) {
+                    if (respuesta3 == 2) {
                         System.out.println("Correcto. Ahora continuemos con el recuento de preguntas acertadas.");
                     } else {
                         System.out.println("Incorrecto. Continuemos con el recuento de preguntas");
                     }
-                } if (respuesta == 2 && respuesta2 == 1 && respuesta3 == 1) {
-                    System.out.println("3/3. Enhorabuena, tienes concocimientos básicos sobre los videojuegos!");
-                } else if (((respuesta == 2) && (respuesta2 == 1) || ((respuesta == 2) && (respuesta3 == 1)) || ((respuesta2 == 1) && (respuesta3 == 1)))) {
+                } if (respuesta == 3 && respuesta2 == 1 && respuesta3 == 2) {
+                    System.out.println("3/3. Enhorabuena, tienes cultura general (muy general) de peliculas!");
+                } else if (((respuesta == 3) && (respuesta2 == 1) || ((respuesta == 3) && (respuesta3 == 2)) || ((respuesta2 == 1) && (respuesta3 == 2)))) {
                     System.out.println("2/3. Enhorabuena, has acertado 2 de 3, sigue así!");
-                } else if ((respuesta == 2) || (respuesta2 == 1) || (respuesta3 == 1)) {
+                } else if ((respuesta == 3) || (respuesta2 == 1) || (respuesta3 == 2)) {
                     System.out.println("1/3. Puedes seguir mejorando");
                 } else {
                     System.out.println("0/3. Puedes intentarlo de nuevo");
@@ -519,13 +521,13 @@ public class Main {
             if (pregunta == 3) {
                 System.out.println(preguntas[2]);
 
-                System.out.println("1. Steam");
-                System.out.println("2. Epic Games Launcher");
-                System.out.println("3. Ubisoft Connect");
+                System.out.println("1. Need For Speed");
+                System.out.println("2. Fast & Furious");
+                System.out.println("3. Gran Turismo");
 
                 respuesta2 = sc.nextInt();
 
-                if (respuesta2 == 1) {
+                if (respuesta2 == 2) {
                     System.out.println("Correcto, seleccione siguiente pregunta");
                 } else {
                     System.out.println("Incorrecto, seleccione la siguiente pregunta");
@@ -549,27 +551,26 @@ public class Main {
                 if (pregunta2 == 2) {
                     System.out.println(preguntas [1]);
 
-                    System.out.println("1. 2004");
-                    System.out.println("2. 2005");
-                    System.out.println("3. 2008");
+                    System.out.println("1. Saga del Infinito");
+                    System.out.println("2. Saga del Multiverso");
+                    System.out.println("3. UCM (Universo Cinematografico de Marvel)");
 
                     respuesta3 = sc.nextInt();
 
                     if (respuesta3 == 1) {
-                        System.out.println("Correcto, aunque en Europa se estrenó en 2005, su lanzamiento original fue en 2004 en Japón y EEUU.");
-                        System.out.println("Pasemos a la ultima pregunta");
+                        System.out.println("Correcto. Pasemos a la ultima pregunta");
                     } else {
                         System.out.println("Incorrecto, contiuemos con la ultima pregunta");
                     }
                     System.out.println(preguntas[0]);
 
-                    System.out.println("1. God of War Ragnarok");
-                    System.out.println("2. Elden ring");
-                    System.out.println("3. It Takes two");
+                    System.out.println("1. X-Men Dark Phoenix");
+                    System.out.println("2. Spiderman Far From Home");
+                    System.out.println("3. Avengers Endgame");
 
                     respuesta = sc.nextInt();
 
-                    if (respuesta == 2) {
+                    if (respuesta == 3) {
                         System.out.println("Correcto! Has finalizado el cuestionario, ahora pasaremos al recuento de tus preguntas correctas");
                     } else {
                         System.out.println("Incorrecto. Ahora pasemos al recuento de preguntas correctas");
@@ -578,22 +579,22 @@ public class Main {
                 if (pregunta2 == 1) {
                     System.out.println(preguntas[0]);
 
-                    System.out.println("1. God of War Ragnarok");
-                    System.out.println("2. Elden ring");
-                    System.out.println("3. It Takes two");
+                    System.out.println("1. X-Men Dark Phoenix");
+                    System.out.println("2. Spiderman Far From Home");
+                    System.out.println("3. Avengers Endgame");
 
                     respuesta = sc.nextInt();
 
-                    if (respuesta == 2) {
+                    if (respuesta == 3) {
                         System.out.println("Correcto! Pasemos con la ultima pregunta");
                     } else {
                         System.out.println("Incorrecto. Pasemos con la ultima pregunta");
                     }
                     System.out.println(preguntas [1]);
 
-                    System.out.println("1. 2004");
-                    System.out.println("2. 2005");
-                    System.out.println("3. 2008");
+                    System.out.println("1. Saga del Infinito");
+                    System.out.println("2. Saga del Multiverso");
+                    System.out.println("3. UCM (Universo Cinematografico de Marvel)");
 
                     respuesta3 = sc.nextInt();
 
@@ -602,11 +603,11 @@ public class Main {
                     } else {
                         System.out.println("Incorrecto. Continuemos con el recuento de preguntas");
                     }
-                } if (respuesta == 2 && respuesta2 == 1 && respuesta3 == 1) {
-                    System.out.println("3/3. Enhorabuena, tienes concocimientos básicos sobre los videojuegos!");
-                } else if (((respuesta == 2) && (respuesta2 == 1) || ((respuesta == 2) && (respuesta3 == 1)) || ((respuesta2 == 1) && (respuesta3 == 1)))) {
+                } if (respuesta == 3 && respuesta2 == 2 && respuesta3 == 1) {
+                    System.out.println("3/3. Enhorabuena, tienes cultura general (muy general) de peliculas!");
+                } else if (((respuesta == 3) && (respuesta2 == 2) || ((respuesta == 3) && (respuesta3 == 1)) || ((respuesta2 == 2) && (respuesta3 == 1)))) {
                     System.out.println("2/3. Enhorabuena, has acertado 2 de 3, sigue así!");
-                } else if ((respuesta == 2) || (respuesta2 == 1) || (respuesta3 == 1)) {
+                } else if ((respuesta == 3) || (respuesta2 == 2) || (respuesta3 == 1)) {
                     System.out.println("1/3. Puedes seguir mejorando");
                 } else {
                     System.out.println("0/3. Puedes intentarlo de nuevo");
